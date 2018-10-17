@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boxing excercise 1</title>
+    <link rel="stylesheet" href="position_style2.css">
+    <style>
+    .main {
+      display: grid;
+      grid-template-columns: repeat(4, 50px);
+      grid-template-rows: repeat(2,50px)
+    }
+    .box {
+      margin: 2px;
+      background-color: red;
+    }
+    .last-box {
+      grid-area: 2/ 4 / 2/ 5;
+    }
+
+    .box-tall {
+      grid-area: 1/ 4 / 3/ 4;
+    }
+    .box-long {
+      grid-area: 2/ 2 / 2/ 4;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box last-box">6</div>
+    </div>
+
+    <div class="main">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box box-tall">4</div>
+      <div class="box">5</div>
+      <div class="box box-long">6</div>
+    </div>
+  </body>
+</html>
